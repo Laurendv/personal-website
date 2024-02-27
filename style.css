@@ -1,0 +1,23 @@
+body {
+    display: flex;
+}
+
+#sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+#content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+}
+
+#sidebar ul li {
+    margin-bottom: 10px;
+}
