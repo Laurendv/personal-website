@@ -2,6 +2,15 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LN38SSY1S8"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LN38SSY1S8');
+    </script>
 </head>
 <body>
     <div id="sidebar">
@@ -9,6 +18,23 @@
             <li style="font-weight: bold; font-size: large;">Lauren Vu</li>
             <li><a href="home.html">Home</a></li>
             <li><a href="about.html">About</a></li>
+            <li style="padding-top: 200px;">
+                <form name="contact" netlify>
+                    <fieldset>
+                        <legend>Get Newsletter</legend>
+                        <p>
+                          <label>First Name <input type="text" name="name" /></label>
+                        </p>
+                        <p>
+                          <label>Email <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                          <button type="submit">Subscribe</button>
+                        </p>
+                    </fieldset>
+                </form>
+                <p class="success-message">You've successfully subscribed to my newsletter.</p>
+            </li>
         </ul>
     </div>
 </body>
